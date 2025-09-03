@@ -1,0 +1,22 @@
+
+title: "Spot Micro"
+description: "A four‑legged robotic dog — build diary with photos & videos."
+remote_theme: "mmistakes/minimal-mistakes@4.27.2"
+plugins:
+  - jekyll-include-cache
+
+# Site URL settings (project site)
+url: "https://FrostKazi.github.io"
+baseurl: "/SpotMicro"
+repository: "FrostKazi/SpotMicro"
+locale: "en-IN"
+
+# Minimal Mistakes settings
+minimal_mistakes_skin: "default"
+search: true
+logo: "/SpotMicro/assets/images/cover.png"
+
+# Simple header navigation (lists pages to show in the top nav)
+header_pages:
+  - about.md
+  - gallery.md

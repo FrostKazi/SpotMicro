@@ -1,0 +1,9 @@
+
+# Example of advanced nav (unused by default). To use, remove header_pages in _config.yml and enable this in theme docs.
+main:
+  - title: "Home"
+    url: /
+  - title: "Gallery"
+    url: /gallery/
+  - title: "About"
+    url: /about/
