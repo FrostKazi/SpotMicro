@@ -1,9 +1,9 @@
 
 ---
-layout: home
-title: "Spot Micro - Doggi Don"
-author_profile: false
-excerpt: "A quadruple robotic dog — build diary with photos & videos."
+layout: home  
+title: "Spot Micro - Doggi Don"  
+author_profile: false  
+excerpt: "A quadruple robotic dog — build diary with photos & videos."  
 ---
 
 Welcome to my **Spot Micro** project blog! 🐕🤖  
