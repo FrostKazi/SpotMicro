@@ -1,40 +1,48 @@
-<style>
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
+  column-count: 3;   /* default: desktop */
+  column-gap: 12px;
 }
 
 .gallery a {
-  display: block;
-  overflow: hidden;
-  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 12px;
+  width: 100%;
 }
 
 .gallery img {
   width: 100%;
-  height: 180px;   /* fixed thumbnail height */
-  object-fit: cover;  /* crop instead of stretch */
+  height: auto;
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease;
+  display: block;
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
-}
-
-figure {
-  margin: 0;
-  text-align: center;
+  transform: scale(1.03);
 }
 
 figcaption {
-  margin-top: 4px;
   font-size: 0.9em;
+  text-align: center;
+  margin-top: 4px;
   color: #555;
 }
 
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+
+/* Lightbox styling with animation */
 .lightbox {
   position: fixed;
   top: 0; left: 0;
@@ -45,7 +53,7 @@ figcaption {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .lightbox.show {
@@ -57,5 +65,13 @@ figcaption {
   max-width: 90%;
   max-height: 90%;
   border-radius: 8px;
+  transform: scale(0.85);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-</style>
+
+.lightbox.show img {
+  transform: scale(1);
+  opacity: 1;
+}
+
