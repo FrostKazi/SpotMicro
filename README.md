@@ -6,9 +6,10 @@ Well, made one for college's Capstone Project, a short blog-like documentation f
 **Live site (cuz why not xD):** `https://FrostKazi.github.io/SpotMicro/`
 
 ## SpotMicro Community
-Offical - `https://spotmicroai.readthedocs.io/en/latest/`
-Project Based On MichaelKubina Designs - `https://github.com/michaelkubina/SpotMicroESP32`
-& Runeharlyk Build - `https://github.com/runeharlyk/SpotMicroESP32-Leika`
+Offical - `https://spotmicroai.readthedocs.io/en/latest/`  
+Reddit - `https://www.reddit.com/r/Spotmicro/`  
+Project Based On MichaelKubina Designs - `https://github.com/michaelkubina/SpotMicroESP32`  
+& Runeharlyk Build - `https://github.com/runeharlyk/SpotMicroESP32-Leika`  
 Check them out, they have done an awesome job in keeping up the development for hobbyists.
 
 ## My Twist
