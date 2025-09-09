@@ -64,8 +64,8 @@ This is the visual progress log of my Spot Micro quadruped robot build.
   </figure>
 
   <figure>
-    <a href="{{ site.baseurl }}/assets/images/All At 90 Slde.jpg" data-lightbox>
-      <img src="{{ site.baseurl }}/assets/images/All At 90 Slde.jpg" alt="All At 90 Slide" />
+    <a href="{{ site.baseurl }}/assets/images/All90.jpg" data-lightbox>
+      <img src="{{ site.baseurl }}/assets/images/All90.jpg" alt="All At 90 Slide" />
     </a>
     <figcaption>All At 90 Slide</figcaption>
   </figure>
