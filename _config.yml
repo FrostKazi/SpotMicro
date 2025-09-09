@@ -14,9 +14,8 @@ locale: "en-IN"
 # Minimal Mistakes settings
 minimal_mistakes_skin: "default"
 search: true
-logo: "/SpotMicro/assets/images/cover.png"
+logo: "/SpotMicro/assets/images/Done.jgp"
 
 # Simple header navigation (lists pages to show in the top nav)
 header_pages:
-  - about.md
   - gallery.md
