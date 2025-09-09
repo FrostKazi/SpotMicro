@@ -204,3 +204,77 @@ This is the visual progress log of my Spot Micro quadruped robot build.
   </figure>
 
 </div>
+
+---
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("a[data-lightbox]");
+  const lightbox = document.createElement("div");
+  lightbox.classList.add("lightbox");
+  lightbox.innerHTML = "<img />";
+  document.body.appendChild(lightbox);
+
+  const lightboxImg = lightbox.querySelector("img");
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      lightboxImg.src = link.href;
+      lightbox.classList.add("show");
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("show");
+  });
+});
+</script>
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+figure {
+  margin: 0;
+  text-align: center;
+}
+figcaption {
+  margin-top: 4px;
+  font-size: 0.9em;
+  color: #555;
+}
+.lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.lightbox.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+</style>
